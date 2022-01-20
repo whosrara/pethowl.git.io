@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #D1FFEF;
+    margin: 0 auto;
+
+}
+.topnav a{
+    text-decoration: none;
+    color: black;
+}
+.topnav:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+header{
+    margin: 0;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 10px;
+    padding-top: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+header ul li a p{
+    background-color: red;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.banner{
+    display: flex;
+    height: 75vh;
+    background-color: #D1FFEF;
+}
+.benner:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f1d4d46e;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin-top: -85px;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: white;
+}
+.card img{
+    justify-content: center;
+    border-radius: 50%;
+    width: 200px;
+}
+.card .nav{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.card .nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* content */
+h1{
+    padding-top: 200px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 100px;
+}
+.artikel{
+    display: flex;
+    padding-top: 8px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.kolom{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 600px;
+    height: 360px;
+    padding: 20px;
+}
+.kolom img{
+    border-radius: 10px;
+}
+.kolom a{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.kolom p{
+    padding-top: 8px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: rgb(43, 42, 42);
+}
+.next{
+    display: flex;
+    padding: 8px 0;
+    width: 200px;
+    border: 0;
+    font-size: 10pt;
+    margin: 18px 0px;
+    margin-left: 43%;
+    padding-top: 20px;
+}
+.next a{
+    padding-left: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.next i{
+    padding-left: 30px;
+    font-size: 20px;
+    color: #000000;
+}
+/* footer */
+footer{
+    position: relative;
+    bottom: 0;
+}
+.footer{
+    display: flex;
+    background-color: #414141;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: 16px sans-serif;
+    padding: 50px 50px 0px 50px;
+    margin-top: 80px;
+}
+.footer .footer-left, .footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer .footer-left{
+    width: 35%;
+}
+.footer .footer-left i{
+    background-color: #9b9b9b;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer .footer-left p{
+    width: 50%;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    margin: 0px;
+}
+.footer-right{
+    width: 20%;
+}
+.footer .footer-about{
+    float: right;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin: 0px;
+}
+.footer .footer-about span{
+    display: block;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+.footer .footer-about a{
+    display: block;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+.footer .sosmed{
+    margin-top: 25px;
+}
+.footer .sosmed a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #9b9b9b;
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 40px;
+    margin-right: 8px;
+    margin-bottom: 40px;
+}
+.footer.sosmed a:hover{
+    background-color: rgb(255, 255, 255);
+}
+.footer .footer-left, .footer .footer-right{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.copyright{
+    text-align: center;
+    background-color: #343535;
+    width: 100%;
+    color: white;
+}

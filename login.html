@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <form action="#" method="POST" onsubmit="validasi()">
+        <div class="login">
+            <h3>Masuk atau Daftar</h3>
+            <div class="box-login">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" name="user" id="user">
+            </div>
+            <div class="box-login">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="pw" id="pw">
+            </div>
+            <button class="btn-login">
+                <input type="submit" class="tombol" value="Login">
+            </button>
+            <div class="bottom">
+                <a>Masuk atau Daftar dengan</a>
+            </div>
+            <div class="box-fb">
+                <a href="#"></a>
+                <i class="fab fa-facebook"></i>
+                <p>Facebook</p>
+            </div>
+            <div class="box-google">
+                <a href="#" class="google btn"></a>
+                <i class="fab fa-google"></i>
+                <p>Google</p>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+        function validasi (){
+            var user = document.getElementById("user").value;
+            var pw = document.getElementById("pw").value;
+            var a1 = "Anda harus mengisi ";
+
+            if(user == ""){
+                a1 = a1 + "username, ";
+                console.log("Tidak ada username");
+            }
+            if(pw == ""){
+                a1 = a1 + "password.";
+               console.log("Tidak ada password");
+            }
+
+            if(a1 == "Anda harus mengisi "){
+                console.log("Data Anda Lengkap");
+                alert("Data Anda Lengkap");
+            }else{
+               alert(a1);
+            }
+        }
+    </script>
+</body>
+</html>
